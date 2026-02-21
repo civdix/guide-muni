@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Guide Muni",
+    "slug": "guide-muni",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.guidemuni.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Guide Muni uses your camera to capture images for AI analysis.",
+        "NSLocationWhenInUseUsageDescription": "Guide Muni uses location to provide contextual guidance.",
+        "NSSpeechRecognitionUsageDescription": "Guide Muni uses speech recognition to understand your voice requests.",
+        "NSMicrophoneUsageDescription": "Guide Muni records your voice for speech-based AI requests."
+      }
+    },
+    "android": {
+      "package": "com.guidemuni.app",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-location",
+      "expo-speech"
+    ]
+  }
+}
